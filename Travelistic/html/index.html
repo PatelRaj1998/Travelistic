@@ -14,11 +14,11 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">VTA</a>
+    <a href="#" class="w3-bar-item w3-button w3-wide">Travelistic</a>
     <!-- Right-sided navbar links -->
     
     <div class="w3-right w3-hide-small">
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Login</a>
     </div>
     <div class="w3-right w3-hide-small">
       <a href="hotels.php" class="w3-bar-item w3-button"><i class='fas fa-hotel'></i> Hotels</a>
@@ -39,8 +39,11 @@
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16" style="float: right;">X</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Login</a>
+  <a href="places.php" onclick="w3_close()" class="w3-bar-item w3-button">Places</a>
+  <a href="food.php" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="hotels.php" onclick="w3_close()" class="w3-bar-item w3-button">Hotels</a>
 </nav>
 <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-min fixHeight" id="home">
@@ -57,9 +60,15 @@
     <div class="w3-display-middle myFlex-container">
       <div>
           <div class="flexImage">
+            <!--
               <a href="places.php">
                 <img src="../images/place1.jpeg";>
               </a>
+            -->
+            <a href="places.php">
+              <i class="fas fa-hotel" style='font-size:80px;'></i> 
+            </a>
+
           </div>
           <div class="flexNames">
               Places
@@ -67,9 +76,15 @@
       </div>    
       <div>
           <div class="flexImage">
+            <!--
               <a href="food.php">
                 <img src="../images/food9.png";>
               </a>
+            -->
+            <a href="food.php">
+              <i class="fas fa-pizza-slice" style='font-size:80px;'></i> 
+            </a>
+
           </div>
           <div class="flexNames">
               Food
@@ -77,25 +92,21 @@
       </div>
       <div>
           <div class="flexImage">
+            <!--
               <a href="hotels.php">
                 <img src="../images/hotel11.jpeg";>
               </a>
+            -->
+            <a href="hotels.php">
+              <i class="fas fa-hotel" style='font-size:80px;'></i> 
+            </a>
           </div>
           <div class="flexNames">
               Hotels
           </div>
       </div>
     </div>
-    
-        
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
+
 </header>
 
 <!-- Contact Section -->
@@ -164,7 +175,6 @@ function w3_close() {
 <script>
 
   function initAutocomplete() {
-
       var input = document.getElementById('pac-input');
       var autocomplete = new google.maps.places.Autocomplete(input, {types: ['geocode']});
 
