@@ -353,7 +353,7 @@ function post(path, method='POST') {
 
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRUn-gFXh88tScx4OUByKiNfSdzDBbOqU&libraries=places&callback=getLocation"
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=getLocation"
      async defer>
 </script>
  </body>
